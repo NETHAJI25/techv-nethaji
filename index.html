@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechVayuna | Innovate the Future</title>
+    <style>
+        /* Reset & Fonts */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #0d0d0d;
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background: rgba(0, 0, 0, 0.85);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #00f5ff;
+        }
+
+        .logo span {
+            color: #ff00ff;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 25px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #00f5ff;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #1a1a1a, #0f0f0f);
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            color: #00f5ff;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #ccc;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #00f5ff;
+            color: #000;
+            border-radius: 30px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #ff00ff;
+            color: #fff;
+        }
+
+        /* About Section */
+        .about, .event, .join {
+            padding: 80px 50px;
+            text-align: center;
+        }
+
+        .about h2, .event h2, .join h2 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: #ff00ff;
+        }
+
+        .about p, .event p, .join p {
+            font-size: 1.1rem;
+            color: #ccc;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        /* Event Section */
+        .event span {
+            color: #00f5ff;
+            font-weight: bold;
+        }
+
+        /* Join Section */
+        form {
+            margin-top: 20px;
+        }
+
+        form input {
+            padding: 12px;
+            margin: 10px;
+            width: 250px;
+            border: none;
+            border-radius: 20px;
+            outline: none;
+        }
+
+        form button {
+            padding: 12px 20px;
+            background: #00f5ff;
+            color: #000;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        form button:hover {
+            background: #ff00ff;
+            color: #fff;
+        }
+
+        /* Footer */
+        footer {
+            background: #000;
+            text-align: center;
+            padding: 15px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        /* Responsive */
+        @media(max-width: 768px) {
+            nav ul {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+
+            form input {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">Tech<span>Vayuna</span></div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#event">Event</a></li>
+                <li><a href="#join">Join Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Innovate. Create. Lead.</h1>
+            <p>Welcome to TechVayuna – where technology meets creativity and passion becomes innovation.</p>
+            <a href="#join" class="btn">Join the Revolution</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About TechVayuna</h2>
+        <p>
+            TechVayuna is a dynamic tech club dedicated to fostering innovation, collaboration, and learning among enthusiasts.
+            From hackathons to workshops, we create opportunities for students to explore cutting-edge technology and showcase their skills.
+        </p>
+    </section>
+
+    <!-- Event Section -->
+    <section id="event" class="event">
+        <h2>Upcoming Event: <span>Tech Storm 2025</span></h2>
+        <p>
+            Get ready for an electrifying experience! Participate in coding challenges, AI showcases, and networking sessions with industry leaders.
+            Date: <b>October 10, 2025</b> | Venue: <b>SRM Innovation Hall</b>
+        </p>
+        <a href="#join" class="btn">Reserve Your Spot</a>
+    </section>
+
+    <!-- Join Section -->
+    <section id="join" class="join">
+        <h2>Be Part of the Future</h2>
+        <p>Join TechVayuna today and start your journey towards innovation and excellence.</p>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <button type="submit">Join Us</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 TechVayuna | Designed with 💻 & Passion</p>
+    </footer>
+
+    <!-- JavaScript for Smooth Scroll -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
